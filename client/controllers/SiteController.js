@@ -33,7 +33,6 @@ Jii.defineClass('app.controllers.SiteController', /** @lends app.controllers.Sit
 
         if (!this._isChatInit) {
             this._isChatInit = true;
-            console.log(123)
             Jii.app.comet.on(
                 Jii.comet.client.ControllerClient.EVENT_CHANNEL_NAME + 'chat',
                 /** @param {Jii.comet.ChannelEvent} event */
