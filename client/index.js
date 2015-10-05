@@ -36,7 +36,7 @@ Jii.createWebApplication({
                 }
             },
             comet: {
-                className: 'Jii.comet.client.ControllerClient',
+                className: 'Jii.comet.client.Client',
                 serverUrl: 'http://localhost:4401/comet'
             }
         }

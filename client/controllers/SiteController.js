@@ -34,7 +34,7 @@ Jii.defineClass('app.controllers.SiteController', /** @lends app.controllers.Sit
         if (!this._isChatInit) {
             this._isChatInit = true;
             Jii.app.comet.on(
-                Jii.comet.client.ControllerClient.EVENT_CHANNEL_NAME + 'chat',
+                Jii.comet.client.Client.EVENT_CHANNEL_NAME + 'chat',
                 /** @param {Jii.comet.ChannelEvent} event */
                 function(event) {
                     event.params.date = moment().format('HH:mm');
@@ -43,6 +43,5 @@ Jii.defineClass('app.controllers.SiteController', /** @lends app.controllers.Sit
             );
         }
     }
-
 
 });
