@@ -1,6 +1,4 @@
 var Jii = require('jii');
-_ = require('lodash');
-Promise = require('promise');
 require('jii-httpserver');
 require('jii-view');
 require('jii-urlmanager');
