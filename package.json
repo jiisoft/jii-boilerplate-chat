@@ -11,8 +11,14 @@
     "jii-httpserver": "*",
     "jii-urlmanager": "*",
     "jii-view": "*",
+    "jii-clientrouter": "*",
+    "jii-workers": "*",
+    "promise": "*",    
     "jquery": "^2.1.4",
-    "moment": "^2.10.6"
+    "moment": "^2.10.6",
+    "lodash": "*",
+    "neatcomet": "https://github.com/ExtPoint/NeatComet/archive/v0.2.1.tar.gz",
+    "require-all": "0.0.8"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
