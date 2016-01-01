@@ -6,7 +6,7 @@ var moment = require('moment');
  */
 Jii.defineClass('app.controllers.SiteController', /** @lends app.controllers.SiteController.prototype */{
 
-	__extends: Jii.base.Controller,
+	__extends: 'Jii.base.Controller',
 
     _isChatInit: false,
 
