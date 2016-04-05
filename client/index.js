@@ -24,7 +24,7 @@ Jii.createWebApplication({
                     'chat': 'site/chat'
                 }
             },
-            router: {
+            clientRouter: {
                 className: 'Jii.clientRouter.Router'
             },
             view: {
