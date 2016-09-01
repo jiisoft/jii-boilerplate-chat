@@ -44,7 +44,7 @@ Jii.createWebApplication({
 }).start();
 
 // Change active link
-Jii.app.on(Jii.base.Module.EVENT_BEFORE_ACTION, function(event) {
+Jii.app.on(Jii.base.Module.EVENT_BEFORE_ACTION, event => {
     /** @typedef {Jii.base.ActionEvent} event */
 
     var path = event.context.request.getPathInfo();

@@ -10,14 +10,14 @@ Jii.defineClass('app.controllers.SiteController', /** @lends app.controllers.Sit
 
     _isChatInit: false,
 
-	actionIndex: function(context) {
+	actionIndex(context) {
         $('#content').html(this.renderPartial('index'));
 	},
 
-	actionChat: function(context) {
+	actionChat(context) {
         var $content = $('#content').html(this.renderPartial('chat'));
 
-        $content.find('> form').on('submit', function(e) {
+        $content.find('> form').on('submit', e => {
             e.preventDefault();
 
             var data = {
@@ -36,10 +36,10 @@ Jii.defineClass('app.controllers.SiteController', /** @lends app.controllers.Sit
             Jii.app.comet.on(
                 Jii.comet.client.Client.EVENT_CHANNEL_NAME + 'chat',
                 /** @param {Jii.comet.ChannelEvent} event */
-                function(event) {
+                event => {
                     event.params.date = moment().format('HH:mm');
                     $content.find('.chat-messages').prepend(this.renderPartial('_message', event.params));
-                }.bind(this)
+                }
             );
         }
     }
